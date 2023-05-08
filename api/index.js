@@ -4,9 +4,9 @@ const app = express();
 
 const storeRoute = require("../routes/Store/Index");
 
-app.use("/store", storeRoute);
+app.use("/api/store", storeRoute);
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
     res.send("Home Page");
 });
 
